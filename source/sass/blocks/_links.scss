@@ -1,0 +1,31 @@
+.link__ourWork {
+  display: block;
+  padding: 27px 75px;
+  max-width: 300px;
+  margin-top: 40px;
+  border-radius: 20px;
+  border: 1px solid $first-text-color;
+  text-align: center;
+  color: $first-text-color;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &--red {
+    background-color: $second-text-color;
+
+    &:hover,
+    &:focus {
+      color: $first-text-color;
+      background-color: rgba(200, 52, 45, 0.8);
+    }
+  }
+}
