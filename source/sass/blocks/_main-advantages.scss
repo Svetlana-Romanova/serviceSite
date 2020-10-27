@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 20px;
+  min-height: 214px;
 
   &:first-child {
     padding-top: 0;
@@ -19,6 +20,7 @@
 
 .main-advantages__text {
   padding: 23px 10px 20px 30px;
+  max-width: 60%;
 }
 
 .main-advantages__leftHeader {

@@ -15,7 +15,9 @@
   font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
+}
 
+.slider__slogan {
   &--red {
     color: $second-text-color;
   }

@@ -1,14 +1,14 @@
-export default function toggler() {
-  let togglerMain = document.querySelector('.main-nav__toggler'),
+export default function toggle() {
+  let toggleMain = document.querySelector('.main-nav__toggle'),
     navList = document.querySelector('.main-nav__list'),
     nav = document.querySelector('.main-nav'),
     body = document.querySelector('body');
 
-  togglerMain.addEventListener('click', (event) => {
-    togglerMain.classList.toggler('active');
-    navList.classList.toggler('d-none');
+  toggleMain.addEventListener('click', (event) => {
+    toggleMain.classList.toggle('active');
+    navList.classList.toggle('d-none');
 
-    if (togglerMain.classList.contains('active')) {
+    if (toggleMain.classList.contains('active')) {
       nav.classList.add('main-nav--adaptive');
       body.style.overflow = 'hidden';
       document.querySelector('.container').style.maxWidth = '100%';

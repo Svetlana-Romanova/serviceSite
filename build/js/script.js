@@ -289,26 +289,26 @@ function slider(slides, indicators) {
 
 /***/ }),
 
-/***/ "./source/js/modules/toggler.js":
-/*!**************************************!*\
-  !*** ./source/js/modules/toggler.js ***!
-  \**************************************/
+/***/ "./source/js/modules/toggle.js":
+/*!*************************************!*\
+  !*** ./source/js/modules/toggle.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return toggler; });
-function toggler() {
-  let togglerMain = document.querySelector('.main-nav__toggler'),
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return toggle; });
+function toggle() {
+  let toggleMain = document.querySelector('.main-nav__toggle'),
       navList = document.querySelector('.main-nav__list'),
       nav = document.querySelector('.main-nav'),
       body = document.querySelector('body');
-  togglerMain.addEventListener('click', event => {
-    togglerMain.classList.toggler('active');
-    navList.classList.toggler('d-none');
+  toggleMain.addEventListener('click', event => {
+    toggleMain.classList.toggle('active');
+    navList.classList.toggle('d-none');
 
-    if (togglerMain.classList.contains('active')) {
+    if (toggleMain.classList.contains('active')) {
       nav.classList.add('main-nav--adaptive');
       body.style.overflow = 'hidden';
       document.querySelector('.container').style.maxWidth = '100%';
@@ -331,7 +331,7 @@ function toggler() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/slider */ "./source/js/modules/slider.js");
-/* harmony import */ var _modules_toggler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/toggler */ "./source/js/modules/toggler.js");
+/* harmony import */ var _modules_toggle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/toggle */ "./source/js/modules/toggle.js");
 /* harmony import */ var _modules_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/modal */ "./source/js/modules/modal.js");
 /* harmony import */ var _modules_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/forms */ "./source/js/modules/forms.js");
 
@@ -349,7 +349,7 @@ document.querySelector('[data-id="btn-call"]').addEventListener('click', () => {
   Object(_modules_forms__WEBPACK_IMPORTED_MODULE_3__["default"])();
 });
 Object(_modules_slider__WEBPACK_IMPORTED_MODULE_0__["default"])(sliderPromo, sliderRect);
-Object(_modules_toggler__WEBPACK_IMPORTED_MODULE_1__["default"])();
+Object(_modules_toggle__WEBPACK_IMPORTED_MODULE_1__["default"])();
 
 /***/ })
 

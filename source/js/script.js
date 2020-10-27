@@ -1,5 +1,5 @@
 import slider from './modules/slider';
-import toggler from './modules/toggler';
+import toggle from './modules/toggle';
 import Modal from './modules/modal';
 import forms from './modules/forms';
 
@@ -16,4 +16,4 @@ document.querySelector('[data-id="btn-call"]').addEventListener('click', () => {
 });
 
 slider(sliderPromo, sliderRect);
-toggler();
+toggle();

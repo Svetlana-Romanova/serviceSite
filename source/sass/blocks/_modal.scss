@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   width: auto;
-  height: auto;
+  height: 90%;
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
@@ -46,8 +46,4 @@
   font-size: 20px;
   margin: 0;
   text-transform: uppercase;
-}
-
-.modal__close:hover {
-  opacity: 0.8;
 }
